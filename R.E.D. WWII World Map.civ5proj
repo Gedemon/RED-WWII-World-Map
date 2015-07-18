@@ -28,6 +28,12 @@
         <Description>TXT_KEY_RED_WORLD_MAP_SCENARIO_DESC</Description>
         <FileName>GameSetup/RedWorldMapSetup.xml</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>RED World Map</Name>
+        <Description>RED World Map</Description>
+        <FileName>Lua/WorldMapMain.lua</FileName>
+      </Content>
     </ModContent>
     <ModProperties>
       <Property>
@@ -35,6 +41,13 @@
         <Description>Art/RedWorldMap.dds</Description>
       </Property>
     </ModProperties>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Texts.xml</FileName>
+      </Action>
+    </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -64,7 +77,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Lua\WorldMapMain.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="RedWorldMap.Civ5Map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Texts.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -72,6 +93,7 @@
   <ItemGroup>
     <Folder Include="GameSetup\" />
     <Folder Include="Art" />
+    <Folder Include="Lua" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>

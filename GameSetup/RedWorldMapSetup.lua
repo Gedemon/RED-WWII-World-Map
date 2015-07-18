@@ -508,7 +508,7 @@ function Initialize()
 
 	print("-------------------------------------")
 	print ("R.E.D WW2 - Scenario setup screen")
-	print ("Selected map : " .. tostring(scenarioMap))
+	print ("Selected map : " .. tostring(scenarioMap.EvaluatedPath))
 
 	Controls.RedWW2Logo:SetTextureAndResize( "background_redwm.dds" )
 	
@@ -724,7 +724,7 @@ function SetPlayerIndex(playerIndex)
 		end
 		
 		-- Sets Dawn of Man Quote
-		Controls.Quote:LocalizeAndSetText("TXT_KEY_RED_EURO1940_BRIEFING");		
+		Controls.Quote:LocalizeAndSetText("TXT_KEY_RED_WORLD_MAP_GENERIC_CIVILIZATION_BRIEFING");		
     end
 
 	Controls.MainStack:CalculateSize();

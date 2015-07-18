@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12-Jul-15 00:48:05 -->
+<GameData>
+	<!--   SETUP SCREENS   -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_RED_WORLD_MAP_SCENARIO_TITLE">
+			<Text>World Map (1936/1939/1942)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RED_WORLD_MAP_SCENARIO_DESC">
+			<Text>
+				Author: Gedemon[NEWLINE]Size: [COLOR_NEGATIVE_TEXT]Giant[/COLOR][NEWLINE][NEWLINE]Lead your nation throught WWII on a Giant Earth Map.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RED_WORLD_MAP_BRIEFING">
+			<Text>Lead your nation throught WWII on a Giant Earth Map.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RED_WORLD_MAP_GENERIC_CIVILIZATION_BRIEFING">
+			<Text>Lead your nation throught WWII on a Giant Earth Map.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
